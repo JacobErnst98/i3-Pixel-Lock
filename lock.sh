@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #Dependencies
 # -i3lock
 # -Scrot
