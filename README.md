@@ -16,4 +16,4 @@ Reference image
 
 #TODO
 - Make default blur with no var passed to script
-- ~~ Make pixelation type an argument rather than separate files. ~~
+~~ Make pixelation type an argument rather than separate files. ~~
