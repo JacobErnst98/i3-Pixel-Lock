@@ -17,7 +17,7 @@ elif [ $BLUR -ge 3 ]; then
 SCALE1="40%" SCALE2="250%"
 fi
 
-$SNAPSHOT
-convert $LOCK -scale $SCALE1 -scale $SCALE2 $LOCK
-i3lock -i $LOCK
-rm $LOCK
+$SNAPSHOT_CMD
+convert $LOCK_FILE -scale $SCALE1 -scale $SCALE2 $LOCK_FILE
+i3lock -i $LOCK_FILE
+rm $LOCK_FILE
