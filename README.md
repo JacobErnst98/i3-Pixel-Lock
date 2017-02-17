@@ -5,13 +5,13 @@ A pixelated i3 lock screen
 Reference image
  ![Reference Image](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/reference.png)
 
-`lock.sh`
+`lock.bash 0 or 1`
  ![lock.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock.png)
 
-`lock2.sh`
+`lock2.bash 2`
  ![lock2.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock2.png)
 
-`lock3.sh`
+`lock3.bash 3`
  ![lock3.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock3.png)
 
 #TODO
