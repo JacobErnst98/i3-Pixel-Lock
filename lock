@@ -4,7 +4,7 @@
 # -i3lock
 # -Scrot
 # -Imagmagick
-BLUR=${1:-2}
+[ -z $BLUR ] && BLUR=${1:-2}
 LOCK=/tmp/pixellock.png
 
 if [ $BLUR -ge 0 ] || [ $BLUR -ge 1 ] ; then
