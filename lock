@@ -7,7 +7,7 @@
 
 SNAPSHOT_CMD="scrot $LOCK"
 LOCK_FILE=/tmp/pixellock.png
-[ -z $BLUR ] && BLUR=${1:-2}
+[ ! "$BLUR" ] && BLUR=${1:-2}
 
 if [ $BLUR -ge 0 ] || [ $BLUR -ge 1 ] ; then
 SCALE1="10%" SCALE2="1000%"
