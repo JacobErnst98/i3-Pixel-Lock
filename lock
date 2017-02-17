@@ -6,7 +6,7 @@
 # -Imagmagick
 
 SNAPSHOT_CMD="scrot $LOCK"
-LOCK_FILE=/tmp/pixellock.png
+LOCK_IMG=/tmp/pixellock.png
 [ ! "$BLUR" ] && BLUR=${1:-2}
 
 if [ $BLUR -ge 0 ] || [ $BLUR -ge 1 ] ; then
@@ -18,6 +18,6 @@ SCALE1="40%" SCALE2="250%"
 fi
 
 $SNAPSHOT_CMD
-convert $LOCK_FILE -scale $SCALE1 -scale $SCALE2 $LOCK_FILE
-i3lock -i $LOCK_FILE
-rm $LOCK_FILE
+convert $LOCK_IMG -scale $SCALE1 -scale $SCALE2 $LOCK_IMG
+i3lock -i $LOCK_IMG
+rm $LOCK_IMG
