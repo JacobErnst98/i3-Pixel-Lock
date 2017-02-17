@@ -4,14 +4,17 @@
 # -i3lock
 # -Scrot
 # -Imagmagick
-
+BLUR=$1
 LOCK=/tmp/pixellock.png
-#Uncomment one of the next 3 lines for diffrent pixelation types.
-###
+
+if [ $BLUR -eq 0 ] || [ $BLUR -eq 1 ] ; then
 SCALE1="10%" SCALE2="1000%"
-#SCALE1="20%" SCALE2="500%"
-#SCALE1="40%" SCALE2="250%"
-###
+elif [ $BLUR -eq 2 ] ; then
+SCALE1="20%" SCALE2="500%"
+elif [ $BLUR -eq 3 ]; then
+SCALE1="40%" SCALE2="250%"
+fi
+
 SNAPSHOT="scrot $LOCK"
 
 $SNAPSHOT
