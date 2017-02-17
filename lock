@@ -4,8 +4,10 @@
 # -i3lock
 # -Scrot
 # -Imagmagick
-[ -z $BLUR ] && BLUR=${1:-2}
+
+SNAPSHOT_CMD="scrot $LOCK"
 LOCK_FILE=/tmp/pixellock.png
+[ -z $BLUR ] && BLUR=${1:-2}
 
 if [ $BLUR -ge 0 ] || [ $BLUR -ge 1 ] ; then
 SCALE1="10%" SCALE2="1000%"
@@ -14,8 +16,6 @@ SCALE1="20%" SCALE2="500%"
 elif [ $BLUR -ge 3 ]; then
 SCALE1="40%" SCALE2="250%"
 fi
-
-SNAPSHOT_CMD="scrot $LOCK"
 
 $SNAPSHOT
 convert $LOCK -scale $SCALE1 -scale $SCALE2 $LOCK
