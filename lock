@@ -9,11 +9,11 @@ SNAPSHOT_CMD="scrot $LOCK"
 LOCK_IMG=/tmp/pixellock.png
 [ ! "$BLUR" ] && BLUR=${1:-2}
 
-if [[ $BLUR -ge 0 || $BLUR -ge 1 ]] ; then
+if [[ $BLUR -eq 0 || $BLUR -eq 1 ]] ; then
 SCALE1="10%" SCALE2="1000%"
-elif [ $BLUR -ge 2 ] ; then
+elif [ $BLUR -eq 2 ] ; then
 SCALE1="20%" SCALE2="500%"
-elif [ $BLUR -ge 3 ]; then
+elif [ $BLUR -eq 3 ]; then
 SCALE1="40%" SCALE2="250%"
 fi
 
