@@ -8,10 +8,10 @@ Reference image
 `lock.bash 0 or 1`
  ![lock.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock.png)
 
-`lock2.bash 2`
+`lock.bash 2`
  ![lock2.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock2.png)
 
-`lock3.bash 3`
+`lock.bash 3`
  ![lock3.sh](https://raw.github.com/jacobernst98/i3-Pixel-Lock/screenshots/screenshots/lock3.png)
 
 #TODO
