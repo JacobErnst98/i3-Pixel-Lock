@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 
 #Dependencies
-# -i3lock
-# -Scrot
-# -Imagmagick
+# -i3lock -Scrot -Imagmagick
 
-SNAPSHOT_CMD="scrot $LOCK"
+echo "checking dependencies"
+if command -v i3lock >/dev/null 2>&1 ; then
+if command -v scrot >/dev/null 2>&1 ; then
+if command -v convert >/dev/null 2>&1 ; then
+
+
+
+
 LOCK_IMG=/tmp/pixellock.png
+SNAPSHOT_CMD="scrot $LOCK_IMG"
 [ ! "$BLUR" ] && BLUR=${1:-2}
 
 if [[ $BLUR -eq 0 || $BLUR -eq 1 ]] ; then
@@ -21,3 +27,17 @@ $SNAPSHOT_CMD
 convert $LOCK_IMG -scale $SCALE1 -scale $SCALE2 $LOCK_IMG
 i3lock -i $LOCK_IMG
 rm $LOCK_IMG
+
+
+else
+echo "installing imagemagick"
+sudo apt install imagemagick
+fi
+else
+echo "installing scrot"
+sudo apt install scrot
+fi
+else
+echo "installing imagemagic"
+sudo apt install i3lock
+fi
