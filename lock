@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Dependencies
-# -i3lock -Scrot -Imagmagick
+# -i3lock -Scrot -Imagemagick
 
 echo "checking dependencies"
 if command -v i3lock >/dev/null 2>&1 ; then
